@@ -1,5 +1,5 @@
 // 1. 两数之和
-package com.kurumi.leetCode;
+package com.kurumi.leetCode.数组;
 
 import java.util.HashMap;
 
