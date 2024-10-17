@@ -1,5 +1,5 @@
 // 118. 杨辉三角
-package com.kurumi.leetCode.动态规划;
+package com.kurumi.leetCode.数组;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,5 +1,5 @@
 // 121. 买卖股票的最佳时机
-package com.kurumi.leetCode.动态规划;
+package com.kurumi.leetCode.数组;
 
 /**
  * @author: kurumi

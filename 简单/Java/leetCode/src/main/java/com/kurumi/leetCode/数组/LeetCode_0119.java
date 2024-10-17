@@ -1,7 +1,6 @@
 // 119. 杨辉三角 II
-package com.kurumi.leetCode.动态规划;
+package com.kurumi.leetCode.数组;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
