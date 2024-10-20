@@ -1,6 +1,8 @@
 // 141. 环形链表
 package com.kurumi.leetCode.双指针;
 
+import com.kurumi.leetCode.ListNode;
+
 /**
  * @author: kurumi
  * @date: 2024-10-18 0:14:08
@@ -15,16 +17,5 @@ public class LeetCode_0141 {
             fast = fast.next.next;
         }
         return true;
-    }
-}
-
-class ListNode {
-
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-        next = null;
     }
 }

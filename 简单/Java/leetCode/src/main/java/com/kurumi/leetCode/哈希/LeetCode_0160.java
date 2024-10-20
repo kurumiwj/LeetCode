@@ -1,6 +1,8 @@
 // 160. 相交链表
 package com.kurumi.leetCode.哈希;
 
+import com.kurumi.leetCode.ListNode;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -22,16 +24,5 @@ public class LeetCode_0160 {
             ptr = ptr.next;
         }
         return null;
-    }
-}
-
-class ListNode {
-
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-        next = null;
     }
 }
