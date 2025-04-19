@@ -16,5 +16,13 @@ buildNumber.properties
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
 .idea/
+.settings/
+bin/
+
+# NetBeans
 nb-configuration.xml
 *.iml
+
+# InsCode
+.jlsp/
+.arts/
