@@ -1,5 +1,5 @@
 // 9. 回文数
-package com.kurumi.leetCode;
+package com.kurumi.leetCode.双指针;
 
 public class LeetCode_0009 {
     public boolean isPalindrome(int x) {
