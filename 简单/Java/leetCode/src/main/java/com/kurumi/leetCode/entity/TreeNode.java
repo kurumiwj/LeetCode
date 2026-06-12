@@ -1,4 +1,4 @@
-package com.kurumi.leetCode;
+package com.kurumi.leetCode.entity;
 
 /**
  * @author kurumi

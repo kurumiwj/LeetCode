@@ -1,7 +1,7 @@
 package com.kurumi.leetCode.双指针;
 
 
-import com.kurumi.leetCode.TreeNode;
+import com.kurumi.leetCode.entity.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 

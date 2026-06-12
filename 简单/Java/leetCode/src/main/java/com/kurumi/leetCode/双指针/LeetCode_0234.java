@@ -4,7 +4,7 @@ package com.kurumi.leetCode.双指针;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.kurumi.leetCode.ListNode;
+import com.kurumi.leetCode.entity.ListNode;
 
 /**
  * @author: kurumi

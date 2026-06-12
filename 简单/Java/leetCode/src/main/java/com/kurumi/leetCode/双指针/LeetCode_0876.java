@@ -1,6 +1,6 @@
 package com.kurumi.leetCode.双指针;
 
-import com.kurumi.leetCode.ListNode;
+import com.kurumi.leetCode.entity.ListNode;
 
 /**
  * @Author Administrator

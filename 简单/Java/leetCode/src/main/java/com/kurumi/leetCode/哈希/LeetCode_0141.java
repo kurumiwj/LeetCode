@@ -1,7 +1,7 @@
 // 141. 环形链表
 package com.kurumi.leetCode.哈希;
 
-import com.kurumi.leetCode.ListNode;
+import com.kurumi.leetCode.entity.ListNode;
 
 import java.util.HashSet;
 import java.util.Set;

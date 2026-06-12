@@ -1,7 +1,7 @@
 // 108. 将有序数组转换为二叉搜索树
 package com.kurumi.leetCode.数组;
 
-import com.kurumi.leetCode.TreeNode;
+import com.kurumi.leetCode.entity.TreeNode;
 
 /**
  * @author: kurumi
