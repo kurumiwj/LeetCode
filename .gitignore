@@ -19,6 +19,9 @@ buildNumber.properties
 .settings/
 bin/
 
+# IDEA
+.gigaide/
+
 # NetBeans
 nb-configuration.xml
 *.iml
