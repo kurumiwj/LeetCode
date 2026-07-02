@@ -45,7 +45,7 @@ public class TreeNodeUtils {
         return root;
     }
 
-    // 输出二叉树
+    // 输出二叉树(不含null)
     public static void print(TreeNode root) {
         if (root == null) return;
         Queue<TreeNode> queue = new ArrayDeque<>();
@@ -55,6 +55,21 @@ public class TreeNodeUtils {
             System.out.printf("%d, ", node.val);
             if (node.left != null) queue.offer(node.left);
             if (node.right != null) queue.offer(node.right);
+        }
+        System.out.println();
+    }
+
+    // 输出二叉树(含null)
+    public static void printWithNull(TreeNode root) {
+        if (root == null) return;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            TreeNode node = queue.poll();
+            System.out.printf("%d, ", node != null ? node.val : node);
+            if (node == null) continue;
+            queue.offer(node.left);
+            queue.offer(node.right);
         }
         System.out.println();
     }
