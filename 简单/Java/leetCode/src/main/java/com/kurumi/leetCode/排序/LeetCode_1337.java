@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
@@ -17,7 +18,7 @@ public class LeetCode_1337 {
         List<Integer> nums = IntStream.range(0, mat.length)
             .map(index -> Arrays.stream(mat[index]).sum())
             .boxed()
-            .toList();
+            .collect(Collectors.toList());
         HashMap<Integer, Integer> map = IntStream.range(0, nums.size())
             .collect(HashMap::new, (m, index) -> m.put(index, nums.get(index)), HashMap::putAll);
         return new ArrayList<>(map.entrySet()).stream()

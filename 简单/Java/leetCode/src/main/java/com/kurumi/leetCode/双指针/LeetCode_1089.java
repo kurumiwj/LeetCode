@@ -32,7 +32,7 @@ public class LeetCode_1089 {
                 ++slow;
             }
         }
-        System.out.println("slow: %d, fast: %d".formatted(slow, fast));
+        System.out.printf("slow: %d, fast: %d", slow, fast);
         --slow;
         int index = arr.length - 1;
         for (int i = slow; i >= 0; i--) {

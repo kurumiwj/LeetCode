@@ -3,6 +3,7 @@ package com.kurumi.leetCode.排序;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @Author kurumi
@@ -11,7 +12,7 @@ import java.util.List;
  */
 public class LeetCode_1200 {
     public List<List<Integer>> minimumAbsDifference(int[] arr) {
-        List<Integer> list = Arrays.stream(arr).boxed().sorted(Integer::compare).toList();
+        List<Integer> list = Arrays.stream(arr).boxed().sorted(Integer::compare).collect(Collectors.toList());;
         int minDiff = 2000000;
         List<List<Integer>> res = new ArrayList<>();
         for (int i = 0; i < list.size() - 1; ++i) {

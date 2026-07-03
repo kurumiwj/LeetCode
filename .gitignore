@@ -29,3 +29,6 @@ nb-configuration.xml
 # InsCode
 .jlsp/
 .arts/
+
+# Fleet
+.fleet/

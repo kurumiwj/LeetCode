@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * @Author kurumi
@@ -12,7 +13,7 @@ import java.util.Map;
  */
 public class LeetCode_1365 {
     public int[] smallerNumbersThanCurrent(int[] nums) {
-        List<Integer> list = Arrays.stream(nums).boxed().sorted().toList();
+        List<Integer> list = Arrays.stream(nums).boxed().sorted().collect(Collectors.toList());
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = list.size() - 1; i >= 0; --i) {
             map.put(list.get(i), i);
