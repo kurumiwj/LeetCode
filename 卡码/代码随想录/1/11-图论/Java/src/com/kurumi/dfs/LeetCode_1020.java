@@ -1,0 +1,37 @@
+//1020. 飞地的数量
+package com.kurumi.dfs;
+
+public class LeetCode_1020 {
+
+}
+class Solution {
+	int cnt;
+	int[][] dir=new int[][] {{0,1},{1,0},{0,-1},{-1,0}};
+	public void dfs(int[][] grid,int x,int y) {
+		grid[x][y]=0;
+		cnt++;
+		for(int i=0;i<4;i++) {
+			int nextX=x+dir[i][0];
+			int nextY=y+dir[i][1];
+			if(nextX<0||nextX>grid.length-1||nextY<0||nextY>grid[0].length-1) continue;
+			if(grid[nextX][nextY]==1) dfs(grid,nextX,nextY);
+		}
+	}
+  public int numEnclaves(int[][] grid) {
+  	int n=grid.length;
+  	int m=grid[0].length;
+  	for(int i=0;i<n;i++) {
+  		if(grid[i][0]==1) dfs(grid,i,0);
+  		if(grid[i][m-1]==1) dfs(grid,i,m-1);
+  	}
+  	for(int j=0;j<m;j++) {
+  		if(grid[0][j]==1) dfs(grid,0,j);
+  		if(grid[n-1][j]==1) dfs(grid,n-1,j);
+  	}
+  	cnt=0;
+  	for(int i=0;i<n;i++)
+  		for(int j=0;j<m;j++)
+  			if(grid[i][j]==1) dfs(grid,i,j);
+  	return cnt;
+  }
+}

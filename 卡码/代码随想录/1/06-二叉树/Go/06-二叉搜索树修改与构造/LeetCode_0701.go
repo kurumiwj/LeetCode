@@ -1,0 +1,18 @@
+//701. 二叉搜索树中的插入操作
+package main
+
+import (
+	. "binaryTree/types"
+)
+
+func insertIntoBST(root *TreeNode, val int) *TreeNode {
+	if root==nil {
+		return &TreeNode{val,nil,nil}
+	}
+	if root.Val>val {
+		root.Left=insertIntoBST(root.Left,val)
+	}else if root.Val<val {
+		root.Right=insertIntoBST(root.Right,val)
+	}
+	return root
+}

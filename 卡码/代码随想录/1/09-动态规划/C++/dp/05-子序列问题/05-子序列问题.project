@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="05-子序列问题" Version="11000" InternalType="">
+  <Description/>
+  <Dependencies/>
+  <Settings Type="Executable">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="clang++" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g -Wall" C_Options="" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="-O0" Required="yes">
+        <LibraryPath Value="."/>
+        <LibraryPath Value="Debug"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="" Command="$(WorkspacePath)\cmake-build-$(WorkspaceConfiguration)\output\$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(WorkspacePath)\cmake-build-$(WorkspaceConfiguration)\output" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="CMake"/>
+      <Environment EnvVarSetName="&lt;Use Workspace Settings&gt;" DbgSetName="&lt;Use Global Settings&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+  <VirtualDirectory Name="src">
+    <VirtualDirectory Name="04-回文">
+      <File Name="src/04-回文/LeetCode_0516.cpp"/>
+      <File Name="src/04-回文/LeetCode_0647.cpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="03-编辑距离">
+      <File Name="src/03-编辑距离/LeetCode_0072.cpp"/>
+      <File Name="LeetCode_0583.cpp"/>
+      <File Name="LeetCode_0392.cpp"/>
+      <File Name="LeetCode_0115.cpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="02-子序列(连续)">
+      <File Name="LeetCode_0718.cpp"/>
+      <File Name="LeetCode_0674.cpp"/>
+      <File Name="LeetCode_0053.cpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="01-子序列(不连续)">
+      <File Name="LeetCode_1035.cpp"/>
+      <File Name="LeetCode_1143.cpp"/>
+      <File Name="LeetCode_0300.cpp"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="include"/>
+</CodeLite_Project>

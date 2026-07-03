@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="graph" Database="" Version="10000">
+  <Project Name="dfs" Path="dfs/dfs.project" Active="Yes"/>
+  <Project Name="bfs" Path="bfs/bfs.project"/>
+  <Project Name="并查集" Path="并查集/并查集.project"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug">
+      <Environment/>
+      <Project Name="dfs" ConfigName="Debug"/>
+      <Project Name="bfs" ConfigName="Debug"/>
+      <Project Name="并查集" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release">
+      <Environment/>
+      <Project Name="dfs" ConfigName="Debug"/>
+      <Project Name="bfs" ConfigName="Debug"/>
+      <Project Name="并查集" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

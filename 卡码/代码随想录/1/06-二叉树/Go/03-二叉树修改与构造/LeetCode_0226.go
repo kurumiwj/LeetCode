@@ -1,0 +1,16 @@
+//226. 翻转二叉树
+package main
+
+import (
+	. "binaryTree/types"
+)
+
+func invertTree(root *TreeNode) *TreeNode {
+	if root==nil {
+		return root
+	}
+	root.Left,root.Right=root.Right,root.Left
+	invertTree(root.Left)
+	invertTree(root.Right)
+	return root
+}
