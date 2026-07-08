@@ -1,4 +1,4 @@
-package com.kurumi.leetCode.动态规划;
+package com.kurumi.basicPractice.动态规划;
 
 /**
  * @Author kurumi

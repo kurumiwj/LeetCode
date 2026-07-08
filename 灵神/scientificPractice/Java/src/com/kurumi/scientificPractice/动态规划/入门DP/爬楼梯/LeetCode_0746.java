@@ -1,4 +1,4 @@
-package com.kurumi.leetCode.动态规划;
+package com.kurumi.scientificPractice.动态规划.入门DP.爬楼梯;
 
 /**
  * @Author kurumi
