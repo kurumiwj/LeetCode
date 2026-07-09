@@ -1,0 +1,27 @@
+package com.kurumi.leetCode.codeThoughts.二叉树._05_二叉树公共祖先;
+
+import com.kurumi.leetCode.codeThoughts.entity.TreeNode;
+
+/**
+ * @Author kurumi
+ * @Date 2026-07-03 上午11:52:20
+ * @Description 236. 二叉树的最近公共祖先
+ */
+public class LeetCode_0236 {
+    static class Solution {
+        public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+            if (root == null || root == p || root == q)
+                return root;
+            TreeNode left = lowestCommonAncestor(root.left, p, q);
+            TreeNode right = lowestCommonAncestor(root.right, p, q);
+            if (left != null && right != null)
+                return root;
+            else if (left == null && right != null)
+                return right;
+            else if (left != null && right == null)
+                return left;
+            else
+                return null;
+        }
+    }
+}
