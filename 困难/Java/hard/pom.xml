@@ -7,7 +7,8 @@
     <artifactId>hard</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>hard</name>
+    <name>LeetCode-hard</name>
+    <description>LeetCode困难题</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

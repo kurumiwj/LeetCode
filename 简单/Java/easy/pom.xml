@@ -7,6 +7,10 @@
     <groupId>com.kurumi.leetCode</groupId>
     <artifactId>easy</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
+    <name>LeetCode-easy</name>
+    <description>LeetCode简单题</description>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>17</maven.compiler.release>
