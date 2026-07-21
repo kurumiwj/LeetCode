@@ -1,2 +1,7 @@
 # 1141. 查询近30天活跃用户数
-select activity_date day, count(distinct user_id) active_users from Activity where activity_date between subDate('2019-07-27', interval 29 day) and '2019-07-27' group by activity_date;
+select
+    activity_date day,
+    count(distinct user_id) active_users
+from Activity
+where activity_date between subDate('2019-07-27', interval 29 day) and '2019-07-27'
+group by activity_date;
